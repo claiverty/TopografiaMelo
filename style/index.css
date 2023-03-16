@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #151515;
+  height: 12vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 1000;
+}
+
+a:hover {
+  color: #94cb76;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.nav-list li {
+  letter-spacing: 1px;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+main {
+  background-size: cover;
+  height: 88vh;
+}
+
+/* Corpo */
+main #content {
+  background-color: #8800f7;
+  height: 88vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Texto corpo */
+main #content .container .contentText {
+  font-family: "Poppins", Arial, Helvetica;
+  display: flex;
+  flex-direction: column;
+}
+
+main #content .container .contentText h1 {
+  font-size: 70px;
+  line-height: 75px;
+  color: #94cb76;
+  font-family: "Open Sans", "Poppins", Arial, Helvetica;
+}
+
+main #content .container .contentText h3 {
+  color: #151515;
+}
+
+main #content .container .contentText p {
+  color: #151515;
+}
+
+main #aboutUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+}
+
+main #aboutUs .about {
+  width: 500px;
+}
+
+main #aboutUs .about h1 {
+  font-family: "Poppins", Arial, Helvetica;
+  color: #151515;
+}
+
+main #aboutUs .about p {
+  font-family: "Poppins", Arial, Helvetica;
+  color: #151515;
+}
+
+main #aboutUs .imgAbout img {
+  width: 300px;
+}
+
+/*-----------------------------*/
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #151515;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
