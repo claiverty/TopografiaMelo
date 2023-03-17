@@ -192,6 +192,7 @@ main #contacts .contactsList a i {
   font-family: "Open Sans", "Poppins", Arial, Helvetica;
   color: #fff;
   font-weight: 500;
+  line-height: 22px;
 }
 
 main #contacts .contactsList i:hover {
@@ -202,6 +203,15 @@ main #contacts .contactsList i {
   font-family: "Open Sans", "Poppins", Arial, Helvetica;
   color: #fff;
   font-weight: 500;
+}
+
+main #contacts .contactsList .iconTime i {
+  color: #fff;
+  line-height: 22px;
+}
+
+main #contacts .contactsList .iconTime i:hover {
+  color: #fff;
 }
 
 footer {
