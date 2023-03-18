@@ -56,112 +56,79 @@ nav .nav-list a:hover {
   transition: 0.3s;
 }
 
-/* Corpo */
 main {
   background-size: cover;
   height: 85vh;
 }
 
-main #content {
+/* Form de contato */
+main #contact {
+  color: #151515;
   background-color: #f5f5f5;
   height: 85vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-/* Texto corpo */
-main #content .container .contentText {
-  font-family: "Poppins", Arial, Helvetica;
+main main #contact .column {
   display: flex;
   flex-direction: column;
-}
-
-main #content .container .contentText h1 {
-  font-size: 70px;
-  line-height: 75px;
-  color: #94cb76;
-  font-family: "Open Sans", "Poppins", Arial, Helvetica;
-}
-
-main #content .container .contentText h3 {
-  color: #151515;
-}
-
-main #content .container .contentText p {
-  color: #151515;
-}
-
-main #aboutUs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
-  padding: 25px;
 }
 
-main #aboutUs .about {
+main #contact .column h1 {
+  font-family: "Open Sans", "Poppins", Arial, Helvetica, sans-serif;
+}
+
+main #contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 10px;
+  padding: 20px;
   width: 500px;
 }
 
-main #aboutUs .about h1 {
-  font-family: "Poppins", Arial, Helvetica;
+main #contact form label {
   color: #151515;
-}
-
-main #aboutUs .about p {
-  font-family: "Poppins", Arial, Helvetica;
-  color: #151515;
-}
-
-main #aboutUs .imgAbout img {
-  width: 300px;
-}
-
-main #services {
-  background-color: #f1fff1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main #services .services {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main #services .services h1 {
-  color: #94cb76;
-  font-family: "Open Sans", "Poppins", Arial, Helvetica;
-}
-
-main #services .services h4 {
-  color: #ec3030;
-  font-family: "Open Sans", "Poppins", Arial, Helvetica;
-}
-
-main #services .servicesList {
-  display: flex;
-  flex-direction: row;
-}
-
-main #services .servicesList ul {
-  font-family: "Poppins", Arial, Helvetica;
+  font-family: "Open Sans", "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  padding: 20px;
 }
 
-main #services .services .iconBox {
-  display: flex;
-  flex-direction: row;
+main #contact form input,
+textarea {
+  background-color: #f5f5f5;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  color: #4e4e4e;
+  font-size: 15px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
 }
 
-main #services .services .iconBox img {
-  width: 60px;
-  margin: 0 1.5rem 0 1.5rem;
+main #contact form button {
+  color: #121212;
+  background-color: #f5f5f5;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  width: 80px;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+main #contact form button:hover {
+  color: #f5f5f5;
+  background-color: #121212;
+  border: 2px solid #f5f5f5;
+  border-radius: 50px;
+  width: 80px;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: 800;
 }
 
 main #contacts {

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitar Orçamento</title>
+    <link rel="stylesheet" href="./style/orçamento.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="./script/navBarMobile.js" defer></script>
+  </head>
+
+  <body>
+    <div id="page">
+      <header>
+        <nav>
+          <a class="logo" href="./index.html">
+            <img
+              src="components/images/LogoEscrita.png"
+              width="500px"
+              alt="nome logo"
+            />
+          </a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="#aboutUs">Sobre-nós</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="./orçamento.html">Orçamento</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div id="contact">
+          <div class="column">
+            <h1>Solicite uma cotação conosco</h1>
+
+            <div class="form">
+              <form
+                action="https://formsubmit.co/clai7dev@gmail.com"
+                method="POST"
+              >
+                <label for="inputName">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Seu nome"
+                  required
+                />
+
+                <label for="inputTelefone">Telefone</label>
+                <input
+                  type="tel"
+                  name="telefone"
+                  placeholder="(00) 00000-0000"
+                  required
+                />
+
+                <label for="inputEmail">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="seu@email.com"
+                  required
+                />
+
+                <label for="inputMessage">Mensagem</label>
+                <textarea
+                  cols="200"
+                  rows="5"
+                  name="message"
+                  placeholder="Como podemos te ajudar?"
+                  required
+                ></textarea>
+
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="_subject" value="Novo Contato!" />
+                <input type="text" name="_honey" style="display: none" />
+                <input type="hidden" name="_captcha" value="false" />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="contacts">
+          <div class="imgContacts">
+            <img src="./components/images/Atendente Escritorio.png" alt="" />
+          </div>
+          <div class="contactsList">
+            <h2>Informações de Contatos</h2>
+
+            <a href="tel:+556136310775"
+              ><i class="bx bx-phone"> (61) 3631-0775</i></a
+            >
+
+            <a href="tel:+5561999314210"
+              ><i class="bx bx-phone"> (61) 99931-4210</i></a
+            >
+
+            <a href="https://wa.me/5561983406456"
+              ><i class="bx bxl-whatsapp"> (61) 98340-6456</i></a
+            >
+
+            <i class="bx bx-envelope"> topografiamelo@gmail.com</i>
+
+            <div class="iconTime">
+              <i class="bx bx-time"> De segunda a Sexta, 08:00 às 17:00</i>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>
+            Direitos © 2023 -
+            <a href="./index.html"> <strong>Topografia Melo</strong></a> |
+            Desenvolvido pela
+            <a
+              class="c7Code"
+              href="https://www.instagram.com/c7code/"
+              target="_blank"
+              title="criação de Site"
+              >C7 Code</a
+            >.
+          </p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
