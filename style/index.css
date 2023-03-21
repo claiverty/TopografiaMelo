@@ -380,7 +380,7 @@ footer p a:hover {
   }
 
   main #contacts .imgContacts img {
-    width: 100px;
+    width: 150px;
   }
 
   main #contacts .contactsList h2 {
@@ -694,7 +694,7 @@ footer p a:hover {
   }
 }
 
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 290px) {
   nav {
     flex-direction: column;
     justify-content: center;

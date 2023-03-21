@@ -95,7 +95,7 @@ main #content #slideColumn #slide img.active {
 }
 
 main #content #slideColumn #slide-controls button {
-  border: none;
+  border: 1px solid #000000;
   background-color: #ddd;
   display: inline-block;
   width: 20px;
@@ -236,4 +236,228 @@ footer p a:hover {
 ::-webkit-scrollbar-thumb {
   width: 10px;
   background-color: #474747;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1100px) {
+  /*NONE*/
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo img {
+    width: 150px;
+  }
+
+  main #content #slideColumn #slide {
+    height: 400px;
+  }
+
+  main #content #slideColumn #slide-controls button {
+    width: 17px;
+    height: 17px;
+  }
+
+  main #content #services h1 {
+    font-size: 30px;
+  }
+
+  main #content #services h2 {
+    font-size: 25px;
+  }
+
+  main #content #services .servicesList ul {
+    font-size: 13px;
+    padding: 3px;
+  }
+
+  main #contacts .imgContacts img {
+    width: 150px;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 25px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav .logo img {
+    width: 125px;
+  }
+
+  main #content #slideColumn #slide {
+    height: 325px;
+  }
+
+  main #content #slideColumn #slide-controls button {
+    width: 15px;
+    height: 15px;
+  }
+
+  main #content #services h2 {
+    font-size: 25px;
+  }
+
+  main #content #services .servicesList {
+    flex-direction: column;
+  }
+
+  main #content #services .servicesList ul {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  main #contacts .imgContacts img {
+    display: none;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav .logo img {
+    width: 125px;
+  }
+
+  main #content #slideColumn #slide {
+    height: 250px;
+  }
+
+  main #content #services h1 {
+    line-height: 28px;
+    font-size: 28px;
+  }
+
+  main #content #services h2 {
+    font-size: 20px;
+  }
+
+  main #content #services .servicesList ul {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav .logo img {
+    width: 125px;
+  }
+
+  main #content #slideColumn #slide {
+    height: 200px;
+  }
+
+  main #content #services h1 {
+    line-height: 25px;
+    font-size: 25px;
+  }
+
+  main #content #services h2 {
+    font-size: 17px;
+  }
+
+  main #content #services .servicesList ul {
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav .logo img {
+    width: 125px;
+  }
+
+  main #content #slideColumn #slide-controls button {
+    width: 13px;
+    height: 13px;
+  }
+
+  main #content #services h2 {
+    font-size: 15px;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 14px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 14px;
+  }
 }
