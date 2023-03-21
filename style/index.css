@@ -27,7 +27,7 @@ nav .nav-list a:hover {
   color: #94cb76;
 }
 
-.logo img {
+nav .logo img {
   width: 200px;
 }
 
@@ -251,60 +251,544 @@ footer p a:hover {
   background-color: #474747;
 }
 
-/*Barra Mobile*/
-@media (max-width: 999px) {
-  body {
-    overflow-x: hidden;
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1100px) {
+  main #content {
+    flex-direction: row;
+    padding: 10px;
   }
 
-  .nav-list {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: #151515;
+  main #content .container .contentText h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  main #content .container .contentText h3 {
+    font-size: 23px;
+  }
+
+  main #content .container .contentText p {
+    font-size: 15px;
+  }
+
+  main #content .contentImg img {
+    width: 330px;
+  }
+
+  main #aboutUs .about {
+    width: 350px;
+  }
+
+  main #aboutUs .about h1 {
+    font-size: 35px;
+  }
+
+  main #aboutUs .about p {
+    font-size: 15px;
+  }
+
+  main #aboutUs .imgAbout img {
+    width: 280px;
+  }
+
+  main #services .services h1 {
+    font-size: 35px;
+  }
+
+  main #services .services h4 {
+    font-size: 23px;
+  }
+
+  main #services .servicesList ul {
+    font-size: 14px;
+  }
+
+  main #services .services .iconBox img {
+    width: 50px;
+  }
+
+  main #contacts .imgContacts img {
+    width: 150px;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo img {
+    width: 150px;
+  }
+
+  main #content .container .contentText h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  main #content .container .contentText h3 {
+    font-size: 16px;
+  }
+
+  main #content .container .contentText p {
+    font-size: 13px;
+  }
+
+  main #content .contentImg img {
+    width: 240px;
+  }
+
+  main #aboutUs .about h1 {
+    font-size: 25px;
+  }
+
+  main #aboutUs .about p {
+    font-size: 13px;
+  }
+
+  main #aboutUs .imgAbout img {
+    width: 200px;
+  }
+
+  main #services .services h1 {
+    font-size: 25px;
+  }
+
+  main #services .services h4 {
+    font-size: 17px;
+  }
+
+  main #services .servicesList ul {
+    font-size: 13px;
+  }
+
+  main #services .services .iconBox img {
+    width: 50px;
+  }
+
+  main #contacts .imgContacts img {
+    width: 100px;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 25px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav {
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+    justify-content: center;
   }
 
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
+  nav .logo img {
+    width: 125px;
   }
 
-  .mobile-menu {
-    display: block;
+  main #content {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  main #content .container .contentText h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  main #content .container .contentText h3 {
+    font-size: 18px;
+  }
+
+  main #content .container .contentText p {
+    font-size: 14px;
+  }
+
+  main #content .contentImg img {
+    width: 320px;
+  }
+
+  main #aboutUs {
+    flex-direction: column;
+  }
+
+  main #aboutUs .about {
+    width: 410px;
+  }
+
+  main #aboutUs .about h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  main #aboutUs .about p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  main #aboutUs .imgAbout img {
+    width: 250px;
+  }
+
+  main #services .services h1 {
+    font-size: 30px;
+  }
+
+  main #services .services h4 {
+    font-size: 18px;
+  }
+
+  main #services .servicesList {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  main #services .servicesList ul {
+    font-size: 14px;
+  }
+
+  main #services .services .iconBox img {
+    width: 50px;
+  }
+
+  main #contacts .imgContacts img {
+    display: none;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+    text-align: center;
   }
 }
 
-.nav-list.active {
-  transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+@media screen and (max-width: 435px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
   }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  nav .logo img {
+    width: 125px;
+  }
+
+  main #content {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  main #content .container .contentText h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  main #content .container .contentText h3 {
+    font-size: 17px;
+  }
+
+  main #content .container .contentText p {
+    font-size: 13px;
+  }
+
+  main #content .contentImg img {
+    width: 300px;
+  }
+
+  main #aboutUs {
+    flex-direction: column;
+  }
+
+  main #aboutUs .about {
+    width: 330px;
+  }
+
+  main #aboutUs .about h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  main #aboutUs .about p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  main #aboutUs .imgAbout img {
+    width: 250px;
+  }
+
+  main #services .services h1 {
+    font-size: 27px;
+  }
+
+  main #services .services h4 {
+    font-size: 17px;
+  }
+
+  main #services .servicesList {
+    flex-direction: column;
+    width: 330px;
+  }
+
+  main #services .servicesList ul {
+    font-size: 13px;
+  }
+
+  main #services .services .iconBox img {
+    width: 50px;
+    margin: 10px;
+  }
+
+  main #contacts .imgContacts img {
+    display: none;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+    text-align: center;
   }
 }
 
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
+@media screen and (max-width: 350px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav .logo img {
+    width: 125px;
+  }
+
+  main #content {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  main #content .container .contentText h1 {
+    font-size: 33px;
+    line-height: 33px;
+  }
+
+  main #content .container .contentText h3 {
+    font-size: 15px;
+  }
+
+  main #content .container .contentText p {
+    font-size: 12px;
+  }
+
+  main #content .contentImg img {
+    width: 275px;
+  }
+
+  main #aboutUs {
+    flex-direction: column;
+  }
+
+  main #aboutUs .about {
+    width: 295px;
+  }
+
+  main #aboutUs .about h1 {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  main #aboutUs .about p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  main #aboutUs .imgAbout img {
+    width: 225px;
+  }
+
+  main #services .services h1 {
+    font-size: 24px;
+  }
+
+  main #services .services h4 {
+    font-size: 17px;
+  }
+
+  main #services .servicesList {
+    flex-direction: column;
+    width: 290px;
+  }
+
+  main #services .servicesList ul {
+    font-size: 12px;
+  }
+
+  main #services .services .iconBox img {
+    width: 50px;
+    margin: 8px;
+  }
+
+  main #contacts .imgContacts img {
+    display: none;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 16px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
 }
 
-.mobile-menu.active .line2 {
-  opacity: 0;
-}
+@media screen and (max-width: 280px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
+  nav .logo img {
+    width: 125px;
+  }
+
+  main #content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  main #content .container .contentText h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  main #content .container .contentText h3 {
+    font-size: 14px;
+  }
+
+  main #content .container .contentText p {
+    font-size: 12px;
+  }
+
+  main #content .contentImg img {
+    width: 250px;
+  }
+
+  main #aboutUs {
+    flex-direction: column;
+  }
+
+  main #aboutUs .about {
+    width: 250px;
+  }
+
+  main #aboutUs .about h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  main #aboutUs .about p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  main #aboutUs .imgAbout img {
+    width: 250px;
+  }
+
+  main #services .services h1 {
+    font-size: 25px;
+  }
+
+  main #services .services h4 {
+    font-size: 14px;
+  }
+
+  main #services .servicesList {
+    width: 250px;
+    flex-direction: column;
+  }
+
+  main #services .servicesList ul {
+    font-size: 11px;
+  }
+
+  main #services .services .iconBox img {
+    width: 50px;
+    margin: 5px;
+  }
+
+  main #contacts .imgContacts img {
+    display: none;
+  }
+
+  main #contacts .contactsList h2 {
+    font-size: 27px;
+    line-height: 25px;
+  }
+
+  main #contacts .contactsList a i {
+    font-size: 14px;
+  }
+
+  main #contacts .contactsList i {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 12px;
+    text-align: center;
+  }
 }
