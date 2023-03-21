@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Topografia Melo</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <title>Serviços - Topografia Melo</title>
+
+    <link rel="stylesheet" href="./style/serviços.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-    <script src="./script/navBarMobile.js" defer></script>
+    <script src="./script/serviços.js" defer></script>
   </head>
-
   <body>
     <div id="page">
       <header>
@@ -39,51 +39,41 @@
       </header>
       <main>
         <div id="content">
-          <div class="container">
-            <div class="contentText">
-              <h3>Topografia e Georreferenciamento</h3>
-              <h1>SERVIÇOS</h1>
-              <h1>ESPECIALIZADOS</h1>
-              <p>
-                Serviços de agronomia e de consultoria às atividades agrícolas e
-                pecuárias.
-              </p>
+          <div id="slideColumn">
+            <div id="slide">
+              <img
+                class="active"
+                src="components/images/Georreferenciamento.jpg"
+              />
+              <img src="components/images/Georreferenciamento.jpg" />
+              <img src="components/images/Georreferenciamento.jpg" />
+              <img src="components/images/Georreferenciamento.jpg" />
+              <img src="components/images/Georreferenciamento.jpg" />
+              <img src="components/images/Georreferenciamento.jpg" />
+              <img src="components/images/Georreferenciamento.jpg" />
+              <img src="components/images/Georreferenciamento.jpg" />
+              <img src="components/images/Georreferenciamento.jpg" />
+              <img src="components/images/Georreferenciamento.jpg" />
+            </div>
+
+            <div id="slide-controls">
+              <button class="active"></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
             </div>
           </div>
-          <div class="contentImg">
-            <img
-              src="./components/images/Topografo PNG.png"
-              alt="imgBank"
-              width="500px"
-            />
-          </div>
-        </div>
 
-        <div id="aboutUs">
-          <div class="about">
-            <h1>Topografia Melo</h1>
-            <p>
-              A Topografia Melo está atuando no mercado desde o de 2009.
-              <br />
-              A empresa tem por sua principal missão ofertar aos nossos clientes
-              soluções inteligentes para seus empreendimentos. Garantindo um
-              atendimento especializado ao seu projeto, com rapidez sem abrir
-              mão da qualidade e segurança nos projetos desenvolvidos.
-            </p>
-          </div>
-          <div class="imgAbout">
-            <img
-              src="components/images/Topografia Melo.png"
-              width="500px"
-              alt="topografia melo"
-            />
-          </div>
-        </div>
+          <div id="services">
+            <h1>Conheça nossos Serviços</h1>
 
-        <div id="services">
-          <div class="services">
-            <h1>Nossos Serviços</h1>
-            <h4>Serviços especializados em</h4>
+            <h2>Serviços especializados em</h2>
 
             <div class="servicesList">
               <ul>
@@ -110,13 +100,6 @@
                 <li>Planialtimetrico</li>
                 <li>Demarcação de curvas niveis</li>
               </ul>
-            </div>
-
-            <div class="iconBox">
-              <img src="./components/icon/iconCompassCol.png" alt="Compass" />
-              <img src="./components/icon/iconDroneCol.png" alt="Drone" />
-              <img src="./components/icon/iconTerrenoCol.png" alt="Terreno" />
-              <img src="./components/icon/iconTopografoCol.png" alt="Topogra" />
             </div>
           </div>
         </div>
